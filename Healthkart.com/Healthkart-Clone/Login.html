@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+
+<body>
+
+    <div id="main">
+        <div id="left">
+
+        </div>
+        <div id="right">
+            <div id="right_header">
+
+                <button id="login_option" onclick="login()">Login</button>
+                <button id="signup_option" onclick="register()">Signup</button>
+            </div>
+
+            <div id="right_body">
+
+                <form id="login_div">
+                    <h3>Mobile Number</h3>
+                    <input type="number" placeholder="Enter 10 digit no." id="input_number">
+                    <button id="login_btn">LOGIN VIA OTP</button>
+
+                    <hr>
+                    <button id="btn_google"></button>
+                </form>
+
+                <form id="register_div">
+                    <h3>Mobile Number</h3>
+                    <input type="number" placeholder="Enter 10 digit no." id="input_number">
+                    <button id="login_btn">SEND OTP</button>
+                    <P>We will send you an OTP to verify your Mobile number</P>
+
+                    <hr>
+                    <button id="btn_google"></button>
+
+                </form>
+
+            </div>
+        </div>
+    
+    </div>
+</body>
+
+<script>
+
+    let login_div = document.getElementById("login_div");
+    let register_div = document.getElementById("register_div");
+
+    function register() {
+
+        // alert(
+        //     "skfs"
+        // );
+        login_div.style.left = "-400px";
+        register_div.style.left = "50px";
+    }
+// good work 
+</script>
+
+</html>
