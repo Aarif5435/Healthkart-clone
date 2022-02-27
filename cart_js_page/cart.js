@@ -1,5 +1,5 @@
 let cartitem = document.querySelector("#cartItem")
-let data = JSON.parse(localStorage.getItem("cartdata"))
+let data = JSON.parse(localStorage.getItem("productdata"))
 
 function display(data) {
     cartitem.innerHTML = []
