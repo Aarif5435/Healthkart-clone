@@ -44,8 +44,8 @@
 
                 <form id="login_div">
                     <h3>Mobile Number</h3>
-                    <input type="number" placeholder="Enter 10 digit no." id="input_number">
-                    <button id="login_btn" onclick="login_b()">LOGIN VIA OTP</button>
+                    <input type="number" placeholder="Enter 10 digit no." id="login_input_number">
+                    <button id="login_btn">LOGIN VIA OTP</button>
 
                     <hr>
                     <button id="btn_google"></button>
@@ -53,8 +53,8 @@
 
                 <form id="register_div">
                     <h3>Mobile Number</h3>
-                    <input type="number" placeholder="Enter 10 digit no." id="input_number">
-                    <button id="register_btn" onclick="register_b()">SEND OTP</button>
+                    <input type="number" placeholder="Enter 10 digit no." id="reg_input_number">
+                    <button id="register_btn">SEND OTP</button>
                     <p id="para">We will send you an OTP to verify your Mobile number</p>
 
                     <hr>
@@ -76,6 +76,13 @@
     let register_optio = document.getElementById("signup_option");
     let login_text= document.getElementById("login_text");
     let resgister_text = document.getElementById("register_text");
+    
+    let login_input_no = document.getElementById("login_input_number");
+    let reg_input_no = document.getElementById("reg_input_number");
+
+    let login_btn = document.getElementById("login_btn");
+    let register_btn = document.getElementById("register_btn");
+
 
     function register_option() {
 
@@ -87,30 +94,73 @@
 
         login_text.style.display = "none";
         register_text.style.display = "contents";
-        // register_div.style.left = "50px";
+        // login_btn.style.visibility = "hidden";
+       
     }
 
     function login_option() {
 
         register_optio.style.color = "black                                                                        ";
-        login_option.style.color = "rgba(67, 223, 189, 0.822)";
+        login_optio.style.color = "rgba(67, 223, 189, 0.822)";
         register_div.style.display = "none";
         login_div.style.display = "contents";
 
         login_text.style.display = "contents";
         register_text.style.display = "none";
 
+        // register_btn.style.visibility = "hidden";
+
+
 }
 
-function login_b(){
 
-alert("This is login ");
-}
+document.querySelector("#login_btn").addEventListener('click', ()=>{
 
-function register_b(){
+    alert("this is login page");
+window.location.href="index.html";
+})
 
-alert("This is register ");
-}
+
+document.querySelector("#register_btn").addEventListener('click', ()=>{
+
+alert("this is register page");
+window.location.href="index.html";
+
+})
+
+
+
+
+// login_btn.addEventListener("click",login_b);
+// register_btn.addEventListener("click",reg_b);
+
+// function login_b(){
+
+//     if(login_input_no.value ==""){
+
+// alert("Please, fill mobile number");
+
+// }
+// else if(reg_input_no.value !==""){
+
+// window.location.href = "otp.html";
+// }
+
+// }
+
+// function reg_b(){
+
+// if(reg_input_no.value ==""){
+
+//     alert("Please, fill mobile number");
+
+   
+// }
+// else if(reg_input_no.value !==""){
+//     window.location.href = "otp.html";
+// }
+
+// }
                          
 </script>
 

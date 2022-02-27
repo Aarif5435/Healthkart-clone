@@ -55,12 +55,13 @@ body{
     margin: auto;
     font-size: 18px;
     font-display: bold;
+  
 }
 #login_option{
     color: rgba(67, 223, 189, 0.822);
 }
 
-#input_number, #login_btn,#register_btn{
+#login_input_number,#reg_input_number,#login_btn,#register_btn{
    width: 95%;
    height: 30px;
 }
