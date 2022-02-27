@@ -10,7 +10,7 @@ function subfun(event) {
 
     if (a == 1 && b == 2 && c == 3 && d == 4) {
         alert("Congratulation! your varification is successful");
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     } else {
         alert("wrong otp")
     }
